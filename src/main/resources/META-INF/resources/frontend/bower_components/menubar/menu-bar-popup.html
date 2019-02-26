@@ -1,0 +1,46 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="card-styles.html">
+<script src="MenuBarEvents.js"></script>
+
+<dom-module id="menu-bar-popup">
+    <template>
+        <style include="card-styles">
+            .popup {
+                /*z-index: 10000;*/
+                position: absolute;
+
+            }
+        </style> 
+
+        <div id="popup" 
+             class="popup card card-1"
+             >
+        </div>
+    </template>
+
+    <script>
+        /**
+         * `menu-bar-popup`
+         * A popup element
+         *
+         * @customElement
+         * @polymer
+         */
+        class MenuBarPopup extends Polymer.Element {
+            static get is() {
+                return 'menu-bar-popup';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'menu-bar-popup'
+                    }
+                };
+            }
+
+        }
+
+        window.customElements.define(MenuBarPopup.is, MenuBarPopup);
+    </script>
+</dom-module>

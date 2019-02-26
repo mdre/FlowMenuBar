@@ -1,0 +1,44 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="card-styles.html">
+<link rel="import" href="menu-bar-styles.html">
+<script src="MenuBarEvents.js"></script>
+
+<dom-module id="menu-bar">
+    <template>
+        <style include="card-styles menu-bar-styles">
+        </style>
+
+        <div id="menuBar" 
+             class="card card-1"
+             onClick="onMenuBarClick(this, event);"
+             >
+            <span id="caption" class="menuBarCaption"></span>
+        </div>
+    </template>
+    
+    <script>
+        /**
+         * `menu-bar`
+         * A MenuBar element
+         *
+         * @customElement
+         * @polymer
+         */
+        class MenuBar extends Polymer.Element {
+            static get is() {
+                return 'menu-bar';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'menu-bar'
+                    }
+                };
+            }
+
+        }
+
+        window.customElements.define(MenuBar.is, MenuBar);
+    </script>
+</dom-module>

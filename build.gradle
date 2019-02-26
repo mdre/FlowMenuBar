@@ -298,20 +298,20 @@ uploadArchives {
             }
             
             pom.groupId = 'com.github.mdre'
-            pom.artifactId = 'flowsubwindow'
+            pom.artifactId = 'flowmenubar'
             
             
             pom.project {
-                name 'Vaadin Flow Subwindow component'
+                name 'MenuBar component for Vaadin Flow'
                 packaging 'jar'
                 // optionally artifactId can be defined here 
-                description 'a Subwindow Desktop and Subwindow component for Vaadin 10+.'
-                url 'https://github.com/mdre/flowsubwindow'
+                description 'a MenuBar for Vaadin 10+.'
+                url 'https://github.com/mdre/FlowMenuBar'
 
                 scm {
-                    connection 'scm:git:git://github.com/mdre/flowsubwindow.git'
-                    developerConnection 'scm:git:ssh://github.com/mdre/flowsubwindow.git'
-                    url 'https://github.com/mdre/flowsubwindow'
+                    connection 'scm:git:git://github.com/mdre/FlowMenuBar.git'
+                    developerConnection 'scm:git:ssh://github.com/mdre/FlowMenuBar.git'
+                    url 'https://github.com/mdre/FlowMenuBar'
                 }
 
                 licenses {

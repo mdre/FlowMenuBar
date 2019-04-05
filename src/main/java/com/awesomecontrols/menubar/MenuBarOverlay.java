@@ -36,7 +36,7 @@ class MenuBarOverlay extends PolymerTemplate<TemplateModel>  {
         
     @ClientCallable
     public void onOverlayClick() {
-        LOGGER.log(Level.INFO, "Overlay Click detectado!");
+        LOGGER.log(Level.FINER, "Overlay Click detectado!");
         UI.getCurrent().remove(this);
     }
 }
